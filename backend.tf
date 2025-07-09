@@ -4,7 +4,7 @@ terraform {
     key          = "alb/terraform.state"
     region       = "us-east-1"
     encrypt      = true
-    use_lockfile = false
+    #use_lockfile = false <-- remove this for action to work
 
   }
 }
