@@ -23,3 +23,13 @@ jobs:
 
       - name: Initialize Terraform
         run: terraform init
+
+      - name: Validate code
+        run: terraform validate
+
+      - name: Plan of action
+        run: terraform plan
+
+      - name: Apply changes
+        run: terraform apply --auto-approve  
+    
